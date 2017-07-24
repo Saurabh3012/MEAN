@@ -1,0 +1,14 @@
+{
+  "name": "express-practice",
+  "version": "1.0.0",
+  "description": "first test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saurabh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

@@ -1,0 +1,43 @@
+For html we make a directory called views. Node automatically finds it 
+using 
+
+res.render("home.ejs", {post: posts});
+
+{name on html file: name on appjs}
+
+<%= //to run js and print as well %>
+<% to run if, for, while etc. and not print anything %>
+
+For external stylesheets, resources like image and fonts or js we make a 
+dir named public (popular by convention) 
+
+To include css and resources:
+write in app.js:  app.use(express.static("public"));
+
+After this just add:
+
+<link rel="stylesheet" href="/css-file-name.css">
+
+
+app.set("view engine", "ejs") --- by doing this in app.js we can remove the
+stupid extension from res.render() 
+
+partials-- file which we include in other files just like you did with EFD.
+For this, we create a new dir inside views and name it partials.
+To include-- <% include partials/header.ejs %>
+
+
+Node does not return the body of request. For this we have to install a package "body-parser" and to use it in app, just write 
+app.use(bodyParser.urlencoded({extended: true}));
+
+We need request package to make HTTP requetss to URLs
+"npm install request --save"
+var request = require("request");
+
+request("URL". )
+
+Use var data = JSON.parse(body) -- to convert string into JSOn
+
+
+
+Note-  &apikey=thewdb
