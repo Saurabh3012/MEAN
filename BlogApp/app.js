@@ -95,6 +95,18 @@ app.put("/blogs/:id",function(req,res){
 
 });
 
+//destroy route
+app.delete("/blogs/:id",function(req,res){
+
+	Blog.findByIdAndRemove(req.params.id, function(err){
+		if(err){
+			res.redirect("/blogs");
+		}else{
+			res.redirect("/blogs");
+		}
+	});
+
+});
 
 app.listen(4949,function(){
 	console.log("Blog server started at localhost:4949");

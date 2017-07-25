@@ -41,3 +41,6 @@ Use var data = JSON.parse(body) -- to convert string into JSOn
 
 
 Note-  &apikey=thewdb
+
+
+To sanitize form data, we can use req.sanitize() function
