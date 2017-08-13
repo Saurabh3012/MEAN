@@ -1,0 +1,27 @@
+fs module - for file handling 
+
+
+os module - 
+
+
+to use js variable inside string - `Hello ${user.usernme} !`
+
+
+
+***Requiring own files:
+
+const notes = require("./notes.js")
+
+export a var to app from oter file
+
+put in notesjs:
+module.exports.age = 25;
+
+
+Install: npm install nodemon -g
+
+
+
+For command line arguments:   process.argv
+
+use npm module "yargs" - to effieciently read command line arguments
